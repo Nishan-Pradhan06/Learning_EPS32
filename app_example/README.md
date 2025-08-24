@@ -1,4 +1,4 @@
-# light_control
+# light_control_app
 
 A new Flutter project.
 
