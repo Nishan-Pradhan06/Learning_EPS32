@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../core/model/iot_component.dart';
 import '../esp32lightdemo.dart';
+import 'ultrasonic_sensor.dart';
 
 class HardwareListScreen extends StatelessWidget {
   final void Function()? onTap;
@@ -41,6 +42,11 @@ class HardwareListScreen extends StatelessWidget {
         'Voltage: 5V DC',
       ],
       usage: 'Obstacle detection, distance measurement, parking sensors',
+      onTap: (context) {
+        Navigator.of(
+          context,
+        ).push(MaterialPageRoute(builder: (context) => UltrasonicPage()));
+      },
     ),
     IoTComponent(
       name: 'LDR (Light Dependent Resistor)',
