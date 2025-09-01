@@ -9,7 +9,7 @@ DHT dht (DHT_DATA_PIN,DHTTYPE);
 
 void setup()
 {
-  Serial.begin(115200);
+  Serial.begin(115200); 
   Serial.println("DHT11 with esp32");
   dht.begin();
 }
